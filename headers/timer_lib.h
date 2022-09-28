@@ -21,11 +21,11 @@ char printWeekDay(DataTime*);
 DataTime * after(char*); // DD HH:MIN:SEC
 
 // Вычисляет значение DataTime до DD HH:MIN:SEC
-DataTime before(char*); // DD HH:MIN:SEC
+DataTime * before(char*); // DD HH:MIN:SEC
 
 // Получает значение поле Timer через аргумент командной строки, введенный как YY-MM-DD HH:MIN:SEC
 // Если аргумент отстутствует, все поля - 0
-Timer getTimer(long long dd, int hh, int min, int sec, int nano);
+Timer * getTimer(long long dd, int hh, int min, int sec, int nano);
 
 // Сложение показаний двух Timer
 void addTm(Timer *, const Timer*);

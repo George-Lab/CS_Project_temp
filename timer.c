@@ -16,7 +16,9 @@ int main (void)
   //printf("%c\n", printWeekDay( setCurrentTime() ));
 
   char test_string_2[] = "15 01:50:52";
-  printf("Current local time and date: %s", asctime( after(test_string_2) ));
+  printf("Local time and date after dd hh::mm::ss -> %s: %s", test_string_2, asctime( after(test_string_2) ));
+
+  printf("Local time and date after dd hh::mm::ss -> %s: %s", test_string_2, asctime( before(test_string_2) ));
 
   return 0;
 }

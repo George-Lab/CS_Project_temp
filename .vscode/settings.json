@@ -1,6 +1,0 @@
-{
-  "files.associations": {
-    "timer_lib.h": "c",
-    "time.h": "c"
-  }
-}

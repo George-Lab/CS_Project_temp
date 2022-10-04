@@ -9,7 +9,7 @@
 void setCurrentTime(DataTime *current_time){
   time_t rawtime;
   time( &rawtime );
-  current_time = localtime( &rawtime );
+  localtime_r(&rawtime, current_time);
 }
 
 // void getTime(DataTime* t, char* time_string) {

@@ -7,10 +7,10 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${file}",
-        "${fileDirname}/libraries/timer_lib.c",
+        "/mnt/c/Users/georg/MIPT/CS class/CS_Project_temp/timer.c",
+        "/mnt/c/Users/georg/MIPT/CS class/CS_Project_temp/libraries/timer_lib.c",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "/mnt/c/Users/georg/MIPT/CS class/CS_Project_temp/timer"
       ],
       "options": {
         "cwd": "${fileDirname}"

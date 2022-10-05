@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>  //Для clock_gettime
 #include <string.h>
-#include "./headers/timer_lib.h"
+#include "./libraries/timer_lib.h"
 
 int main (void)
 {
@@ -21,11 +21,8 @@ int main (void)
   printWeekDay( &dtime );
 
 
-  char *test_string_2 = NULL;
-  size_t test_string_2_size = 12;
-  getline(&test_string_2, &test_string_2_size, stdin);
+  char test_string_2[] = "12 05:38:22";
   printf("Local time and date after dd hh::mm::ss -> %s: %s", test_string_2, asctime( after(test_string_2) ));
-
   printf("Local time and date dd hh::mm::ss before -> %s: %s", test_string_2, asctime( before(test_string_2) ));
 
   ////////// Timer section

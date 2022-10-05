@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>  //Для clock_gettime
 #include <string.h>
-#include "../../headers/timer_lib.h"
+#include "../../libraries/timer_lib.h"
 
 int main() {
   DataTime dtime;

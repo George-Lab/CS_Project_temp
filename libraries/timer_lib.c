@@ -145,6 +145,7 @@ void plusTimer(DataTime * time_point, const Timer * t) {
   time_point->tm_min += t->min;
   time_point->tm_sec += t->sec;
   mktime(time_point); //normalize result
+  mktime(time_point);
 }
 
 void startTime(struct timespec *mt) {

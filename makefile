@@ -1,4 +1,4 @@
-all: timer ./TEST/testing_func_printWeekDay/printWeekDay ./TEST/testing_func_getTimer/getTimer
+all: timer ./TEST/testing_func_printWeekDay/printWeekDay ./TEST/testing_func_getTimer/getTimer ./TEST/testing_func_addTm/addTm ./TEST/testing_func_minusTm/minusTm ./TEST/testing_func_plusTimer/plusTimer
 
 timer: timer.c ./libraries/libtimer.a
 	gcc timer.c -L./libraries -ltimer -o timer
@@ -14,3 +14,12 @@ timer: timer.c ./libraries/libtimer.a
 
 ./TEST/testing_func_getTimer/getTimer: ./TEST/testing_func_getTimer/getTimer.c ./libraries/libtimer.a
 	gcc ./TEST/testing_func_getTimer/getTimer.c -L./libraries -ltimer -o ./TEST/testing_func_getTimer/getTimer
+
+./TEST/testing_func_addTm/addTm: ./TEST/testing_func_addTm/addTm.c ./libraries/libtimer.a
+	gcc ./TEST/testing_func_addTm/addTm.c -L./libraries -ltimer -o ./TEST/testing_func_addTm/addTm
+
+./TEST/testing_func_minusTm/minusTm: ./TEST/testing_func_minusTm/minusTm.c ./libraries/libtimer.a
+	gcc ./TEST/testing_func_minusTm/minusTm.c -L./libraries -ltimer -o ./TEST/testing_func_minusTm/minusTm
+
+./TEST/testing_func_plusTimer/plusTimer: ./TEST/testing_func_plusTimer/plusTimer.c ./libraries/libtimer.a
+	gcc ./TEST/testing_func_plusTimer/plusTimer.c -L./libraries -ltimer -o ./TEST/testing_func_plusTimer/plusTimer

@@ -16,7 +16,7 @@ int main (void)
 
   char test_string[] = "22-04-15 16:35:12";
   strptime(test_string, "%y-%m-%d %H:%M:%S", &dtime);
-  printf("Current local time and date: %s", asctime( &dtime ));
+  printf("Time and date set from string: %s", asctime( &dtime ));
 
   printWeekDay( &dtime );
 

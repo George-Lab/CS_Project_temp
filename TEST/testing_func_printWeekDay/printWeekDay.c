@@ -8,13 +8,12 @@
 
 int main() {
   DataTime dtime;
-  char *test_string = NULL;
-  size_t test_string_size = 11;
-  getline(&test_string, &test_string_size, stdin);
+  char test_string[18];
+  int test_string_size = 18;
+  fgets(test_string, test_string_size, stdin);
   strptime(test_string, "%y-%m-%d %H:%M:%S", &dtime);
   
   printWeekDay(&dtime);
 
-  free(test_string);
   return 0;
 }

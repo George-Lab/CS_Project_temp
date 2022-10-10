@@ -8,12 +8,18 @@
 
 int main() {
   Timer t1;
+  Timer t2;
 
-  char test_string[22];
-  int test_string_size = 22;
-  fgets(test_string, test_string_size, stdin);
+  char test_string_1[23], test_string_2[22]; 
+  int test_string_size = 23;
+  fgets(test_string_1, test_string_size, stdin);
+  test_string_1[22] = '\0';
+  fgets(test_string_2, test_string_size, stdin);
 
-  getTimer(&t1, test_string);
+  getTimer(&t1, test_string_1);
+  getTimer(&t2, test_string_2);
+
+  minusTm(&t1, &t2);
   showTimer(&t1);
 
   return 0;

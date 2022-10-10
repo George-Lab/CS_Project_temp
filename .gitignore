@@ -3,3 +3,7 @@ libraries/timer_lib.o
 TEST/testing_func_getTimer/getTimer
 TEST/testing_func_printWeekDay/printWeekDay
 timer
+.vscode/*
+TEST/testing_func_addTm/addTm
+TEST/testing_func_minusTm/minusTm
+TEST/testing_func_plusTimer/plusTimer

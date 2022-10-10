@@ -1,6 +1,8 @@
-.vscode/
-*
-!/**/
-!*.*
-*.a
-*.o
+.vscode/*
+
+./libraries/timer_lib.o
+./libraries/libtimer.a
+./timer
+
+./TEST/testing_func_printWeekDay/printWeekDay
+./TEST/testing_func_getTimer/getTimer

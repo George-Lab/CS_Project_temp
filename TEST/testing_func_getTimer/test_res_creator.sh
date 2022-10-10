@@ -32,9 +32,9 @@ fi
 # And testing c program
 counter=1
 FILES="$2"
-for file in "$FILES""/test"* ;
+for file in "$FILES""/test_data/"* ;
 do
 	echo -n "Test $counter: "
-	"$1" < "$file" > "tests/test_results/test_res$counter.txt"
+	"$1" < "$file" > "./tests/test_results/test_res$counter.txt"
 	((counter++))
 done
